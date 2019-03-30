@@ -1,0 +1,241 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #DAE9F9;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 10em;
+  width: 60%;
+}
+
+.ios {
+  background-color: #E8E7E7;
+  padding: 8vh 1.5vh;
+  border-radius: 6vh;
+  position: absolute;
+}
+
+.screen {
+  width: 375px;
+  height: 667px;
+  position: relative;
+  background-color: white;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.ios, .screen {
+  border: 0.25vh solid #000;
+  z-index: 4;
+}
+
+.nav-bar {
+  width: 375px;
+  height: 3.1em;
+  position: relative;
+  background-color: white;
+  filter: drop-shadow(0 1px 1px gray);
+}
+
+.nav-bar img {
+  position: absolute;
+  margin: 2.3vh;
+}
+
+.nav-bar h1 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: black;
+  position: absolute;
+  margin: 2vh auto 2vh 15.5vh;
+  letter-spacing: 0.1vh;
+}
+
+.nav-bar h2 {
+  position: absolute;
+  margin: 2.3vh auto 2vh 4.5vh;
+}
+
+.map-box {
+  width: 375px;
+  position: relative;
+  filter: drop-shadow(0 1px 2px gray);
+}
+
+#map {
+  filter: grayscale(40%);
+}
+
+.compass {
+  width: 5vh;
+  position: absolute;
+  top: 37vh;
+  left: 48vh;
+  z-index: 2;
+}
+
+.bus-stop {
+  width: 3vh;
+  position: absolute;
+  top: 4vh;
+  left: 42vh;
+  z-index: 2;
+}
+
+.destination {
+  width: 4vh;
+  position: absolute;
+  top: 16.5vh;
+  left: 15vh;
+  z-index: 3;
+}
+
+.current-location {
+  width: 4vh;
+  position: absolute;
+  top: 11vh;
+  left: 40vh;
+  z-index: 3;
+}
+
+.walk {
+  width: 1.9vh;
+  position: absolute;
+  top: 6.4vh;
+  left: 42vh;
+  z-index: 1;
+}
+
+.ride {
+  height: 18vh;
+  position: absolute;
+  top: 2vh;
+  left: 14.75vh;
+  z-index: 1;
+}
+
+.bus-container {
+  overflow: scroll;
+  height: 45%;
+}
+
+.route-type {
+  width: 375px;
+  height: 2.5em;
+  position: relative;
+  background-color: black;
+}
+
+.route-type h1 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin: 1.2vh auto 1vh 1.8vh;
+  letter-spacing: 0.1vh;
+}
+
+.bus-line {
+  width: 375px;
+  min-height: 5em;
+  position: relative;
+  background-color: #fbf9ff;
+  border-bottom: 1px solid black;
+}
+
+.bus-line:hover {
+  background-color: #c1e2f2;
+  border-bottom: 0;
+  filter: drop-shadow(0 0.5px 1px gray);
+  z-index: 1;
+}
+
+.bus-number {
+  position: absolute;
+  border: 1px solid #6d9df2;
+  border-radius: 12%;
+  padding: 3%;
+  margin: 0.9em auto auto 1.5em;
+  background-color: #DAE9F9;
+  filter: drop-shadow(0 1px 1px gray);
+
+}
+
+.bus-number h1 {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: black;
+  letter-spacing: 0.1vh;
+}
+
+.bus-line h2 {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: black;
+  position: absolute;
+  margin: 2.3vh auto 1vh 15vh;
+  letter-spacing: 0.1vh;
+}
+
+.bus-line h3 {
+  font-size: 0.9em;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  margin: 5.5vh auto 1vh 15vh;
+  letter-spacing: 0.1vh;
+  padding: 0.4vh;
+  border-radius: 5%;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+#reroute {
+  background: rgb(64,13,13);
+  background: linear-gradient(90deg, rgba(64,13,13,1) 0%, rgba(210,100,0,1) 50%, rgba(255,162,32,1) 100%);
+}
+
+#changes {
+  background: rgb(50,0,0);
+  background: linear-gradient(90deg, rgba(50,0,0,1) 0%, rgba(144,4,4,1) 35%, rgba(251,93,93,1) 100%);
+}
+
+.bus-time h4 {
+  position: absolute;
+  margin: 2.1vh auto 1vh 37vh;
+  font-size: 1.4em;
+  letter-spacing: 0.2vh;
+}
+
+span {
+  font-size: 2.2vh;
+}
+
+#resumes {
+  position: absolute;
+  margin: 2vh auto 1vh 37vh;
+}
+
+.bus-time h5 {
+  position: absolute;
+  margin: 6vh auto 1vh 37vh;
+  font-size: 0.7em;
+}
+
+.bus-time img {
+  float: right;
+  position: absolute;
+  margin: 4vh auto 1vh 50.5vh;
+}

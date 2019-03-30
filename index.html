@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BusyBus</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="ios">
+      <div class="screen">
+        <div class="status-bar">
+          <img class="status-bar-icons" src="images/Status_bar_white.svg" alt="Status Bar">
+        </div>
+
+        <div class="nav-bar">
+          <img id="back-arrow" src="images/back.svg" alt="back arrow">
+            <h2>Search</h2>
+            <h1>Washington & State</h1>
+        </div>
+
+        <div class="map-box">
+          <img class="map-box" id="map" src="images/map.png" alt="map">
+          <img class="compass" src="images/compass.svg" alt="compass">
+          <img class="bus-stop" src="images/bus_stop.svg" alt="bus_stop">
+          <img class="destination" src="images/destination.svg" alt="destination">
+          <img class="current-location" src="images/currentlocation.svg" alt="current_location">
+          <img class="walk" src="images/to_bus_stop.svg" alt="to_bus_stop">
+          <img class="ride" src="images/to_destination.svg" alt="to_destination">
+       </div>
+
+        <div class="bus-container">
+
+          <div class="route-type">
+            <h1>Suggested Route</h1>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>124</h1>
+            </div>
+              <h2>Navy Pier</h2>
+            <div class="direction">
+              <h3>East Bound</h3>
+            </div>
+            <div class="bus-time">
+              <h4>2:35 pm</h4>
+              <h5>Every 10 minutes</h5>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="route-type">
+            <h1>Alternative Routes</h1>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>60</h1>
+            </div>
+              <h2>Randolph/Har...</h2>
+            <div class="direction">
+              <h3>East Bound</h3>
+            </div>
+            <div class="bus-time">
+              <h4>2:45 pm</h4>
+              <h5>Every 20 minutes</h5>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>151</h1>
+            </div>
+              <h2>Devon/Clark</h2>
+            <div class="direction">
+              <h3>North Bound</h3>
+            </div>
+            <div class="bus-time">
+              <h4>2:40 pm</h4>
+              <h5>Every 16 minutes</h5>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>J14</h1>
+            </div>
+              <h2>103rd/Stony...</h2>
+            <div class="direction">
+              <h3>South Bound</h3>
+            </div>
+            <div class="bus-time">
+              <h4>2:30 pm</h4>
+              <h5>Every 15 minutes</h5>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>124</h1>
+            </div>
+              <h2>Navy Pier</h2>
+            <div class="direction">
+              <h3>South Bound</h3>
+            </div>
+            <div class="bus-time">
+              <h4>2:45 pm</h4>
+              <h5>Every 10 minutes</h5>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>6x</h1>
+            </div>
+              <h2 >Jackson Park...</h2>
+            <div class="direction">
+              <h3 id=reroute>Reroute</h3>
+            </div>
+            <div class="bus-time">
+              <h4>2:32 pm</h4>
+              <h5>N/A</h5>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>4</h1>
+            </div>
+              <h2>Cottage Grove</h2>
+            <div class="direction">
+              <h3 id=changes>Out of Service</h3>
+            </div>
+            <div class="bus-time">
+              <h4 id="resumes"><span>Resumes</span> 12:10am</h4>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>20</h1>
+            </div>
+              <h2>Madison</h2>
+            <div class="direction">
+              <h3 id=changes>Out of Service</h3>
+            </div>
+            <div class="bus-time">
+              <h4 id="resumes"><span>Resumes</span> 12:10am</h4>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+          <div class="bus-line">
+            <div class="bus-number">
+              <h1>157</h1>
+            </div>
+              <h2>Streeterville/T...</h2>
+            <div class="direction">
+              <h3 id=changes>Out of Service</h3>
+            </div>
+            <div class="bus-time">
+              <h4 id="resumes"><span>Resumes</span> 6:00am</h4>
+              <img class="right-chevron" src="images/Arrow Right.svg" alt="right chevron">
+            </div>
+          </div>
+
+       </div>
+     </div>
+   </div>
+  </body>
+
+
+
+</html>
