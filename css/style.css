@@ -56,6 +56,7 @@ body {
 .nav-bar img {
   position: absolute;
   margin: 2.3vh;
+
 }
 
 .nav-bar h1 {
@@ -63,13 +64,14 @@ body {
   font-weight: 600;
   color: black;
   position: absolute;
-  margin: 2vh auto 2vh 15.5vh;
+  margin: 2vh auto 2vh 16vh;
   letter-spacing: 0.1vh;
 }
 
 .nav-bar h2 {
   position: absolute;
   margin: 2.3vh auto 2vh 4.5vh;
+  padding-left: 0.8vh;
 }
 
 .map-box {
@@ -101,7 +103,7 @@ body {
 .destination {
   width: 4vh;
   position: absolute;
-  top: 16.5vh;
+  top: 30vh;
   left: 15vh;
   z-index: 3;
 }
@@ -123,9 +125,8 @@ body {
 }
 
 .ride {
-  height: 18vh;
   position: absolute;
-  top: 2vh;
+  top: 2.2vh;
   left: 14.75vh;
   z-index: 1;
 }
