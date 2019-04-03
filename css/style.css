@@ -6,12 +6,19 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Ubuntu"), local("Segoe UI"), local("Roboto"), local("DroidSans"), local("Tahoma");
+}
+
 body {
   min-height: 100%;
   align-items: center;
   justify-content: center;
   background-color: #DAE9F9;
-  font-family: "SF Pro Text", sans-serif;
+  font-family: "system", sans-serif;
   font-size: 14px;
   margin-left: auto;
   margin-right: auto;
@@ -28,8 +35,8 @@ body {
 }
 
 .screen {
-  width: 375px;
-  height: 667px;
+  width: 55vh;
+  height: 97vh;
   position: relative;
   background-color: white;
   max-width: 100%;
@@ -42,8 +49,8 @@ body {
 }
 
 .nav-bar {
-  width: 375px;
-  height: 3.1em;
+  width: 55vh;
+  height: 6.5vh;
   position: relative;
   background-color: white;
   filter: drop-shadow(0 1px 1px gray);
@@ -56,26 +63,26 @@ body {
 .nav-bar img {
   position: absolute;
   margin: 2.3vh;
-
 }
 
 .nav-bar h1 {
-  font-size: 1.2em;
+  font-size: 2.4vh;
   font-weight: 600;
   color: black;
-  position: absolute;
-  margin: 2vh auto 2vh 16vh;
-  letter-spacing: 0.1vh;
+  margin: 2vh auto 2vh 3.6vh;
+  letter-spacing: 0.2vh;
+  display: inline-block;
 }
 
 .nav-bar h2 {
-  position: absolute;
-  margin: 2.3vh auto 2vh 4.5vh;
+  font-size: 2vh;
+  margin: 2.3vh auto 2vh 4vh;
   padding-left: 0.8vh;
+  display: inline-block;
 }
 
 .map-box {
-  width: 375px;
+  width: 100%;
   position: relative;
   filter: drop-shadow(0 1px 2px gray);
 }
@@ -87,6 +94,7 @@ body {
 .compass {
   width: 5vh;
   position: absolute;
+  display: flex;
   top: 37vh;
   left: 48vh;
   z-index: 2;
@@ -95,6 +103,7 @@ body {
 .bus-stop {
   width: 3vh;
   position: absolute;
+  display: flex;
   top: 4vh;
   left: 42vh;
   z-index: 2;
@@ -103,6 +112,7 @@ body {
 .destination {
   width: 4vh;
   position: absolute;
+  display: flex;
   top: 30vh;
   left: 15vh;
   z-index: 3;
@@ -111,6 +121,7 @@ body {
 .current-location {
   width: 4vh;
   position: absolute;
+  display: flex;
   top: 11vh;
   left: 40vh;
   z-index: 3;
@@ -119,13 +130,16 @@ body {
 .walk {
   width: 1.9vh;
   position: absolute;
+  display: flex;
   top: 6.4vh;
   left: 42vh;
   z-index: 1;
 }
 
 .ride {
+  width: 28.5vh;
   position: absolute;
+  display: flex;
   top: 2.2vh;
   left: 14.75vh;
   z-index: 1;
@@ -134,30 +148,31 @@ body {
 .bus-container {
   overflow: scroll;
   height: 45%;
+  position: relative;
 }
 
 .route-type {
-  width: 375px;
+  width: 55vh;
   height: 2.5em;
   position: relative;
   background-color: black;
 }
 
 .route-type h1 {
-  font-size: 1.2em;
+  font-size: 2.4vh;
   font-weight: 300;
   color: white;
-  position: absolute;
+  display: inline-block;
   margin: 1.2vh auto 1vh 1.8vh;
   letter-spacing: 0.1vh;
 }
 
 .bus-line {
-  width: 375px;
-  min-height: 5em;
+  width: 55vh;
+  min-height: 10vh;
   position: relative;
   background-color: #fbf9ff;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid darkGray;
 }
 
 .bus-line:hover {
@@ -169,37 +184,40 @@ body {
 
 .bus-number {
   position: absolute;
+  float: left;
   border: 1px solid #6d9df2;
   border-radius: 12%;
   padding: 3%;
-  margin: 0.9em auto auto 1.5em;
+  width: 8.3vh;
+  text-align: center;
+  margin: 2vh auto auto 3vh;
   background-color: #DAE9F9;
   filter: drop-shadow(0 1px 1px gray);
 
 }
 
 .bus-number h1 {
-  font-size: 1.3em;
-  font-weight: 500;
+  font-size: 2.4vh;
+  font-weight: 800;
   color: black;
   letter-spacing: 0.1vh;
 }
 
 .bus-line h2 {
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 2.5vh;
+  font-weight: 700;
   color: black;
   position: absolute;
-  margin: 2.3vh auto 1vh 15vh;
+  margin: 2.3vh auto 1.5vh 15.5vh;
   letter-spacing: 0.1vh;
 }
 
 .bus-line h3 {
-  font-size: 0.9em;
+  font-size: 1.6vh;
   font-weight: 300;
   color: white;
   position: absolute;
-  margin: 5.5vh auto 1vh 15vh;
+  margin: 5.4vh auto 1.5vh 15.5vh;
   letter-spacing: 0.1vh;
   padding: 0.4vh;
   border-radius: 5%;
@@ -219,28 +237,28 @@ body {
 
 .bus-time h4 {
   position: absolute;
-  margin: 2.1vh auto 1vh 37vh;
-  font-size: 1.4em;
+  margin: 2.1vh auto 1vh 36.5vh;
+  font-size: 2.8vh;
   letter-spacing: 0.2vh;
 }
 
 span {
-  font-size: 2.2vh;
+  font-size: 2.1vh;
 }
 
 #resumes {
   position: absolute;
-  margin: 2vh auto 1vh 37vh;
+  margin: 2vh auto 1vh 36.5vh;
 }
 
 .bus-time h5 {
   position: absolute;
-  margin: 6vh auto 1vh 37vh;
-  font-size: 0.7em;
+  margin: 6vh auto 1vh 36.5vh;
+  font-size: 1.5vh;
 }
 
 .bus-time img {
-  float: right;
   position: absolute;
+  float: right;
   margin: 4vh auto 1vh 50.5vh;
 }
