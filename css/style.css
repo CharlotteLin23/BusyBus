@@ -48,6 +48,10 @@ body {
   z-index: 4;
 }
 
+.status-bar img{
+  width: 55vh;
+}
+
 .nav-bar {
   width: 55vh;
   height: 6.5vh;
