@@ -27,15 +27,8 @@ body {
   width: 60%;
 }
 
-.ios {
-  background-color: #E8E7E7;
-  padding: 8vh 1.5vh;
-  border-radius: 6vh;
-  position: absolute;
-}
-
 .screen {
-  width: 55vh;
+  width: 375px;
   height: 97vh;
   position: relative;
   background-color: white;
@@ -43,17 +36,12 @@ body {
   overflow: hidden;
 }
 
-.ios, .screen {
-  border: 0.25vh solid #000;
-  z-index: 4;
-}
-
 .status-bar img{
-  width: 54vh;
+  width: 100%;
 }
 
 .nav-bar {
-  width: 55vh;
+  width: 100%;
   height: 6.5vh;
   position: relative;
   background-color: white;
@@ -156,10 +144,10 @@ body {
 }
 
 .route-type {
-  width: 55vh;
+  width: 100%;
   min-height: 5.5vh;
-  position: relative;
   background-color: black;
+  display: inline-block;
 }
 
 .route-type h1 {
@@ -167,17 +155,18 @@ body {
   font-weight: 300;
   color: white;
   display: inline-block;
-  position: absolute;
   margin: 1.4vh auto 1vh 1.8vh;
   letter-spacing: 0.1vh;
 }
 
+/*Individual Bus Lines*/
 .bus-line {
-  width: 55vh;
+  width: 100%;
   min-height: 10vh;
-  position: relative;
   background-color: #fbf9ff;
   border-bottom: 1px solid darkGray;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .bus-line:hover {
@@ -187,42 +176,45 @@ body {
   z-index: 1;
 }
 
+/* Bus number and styling*/
+
 .bus-number {
-  position: absolute;
   float: left;
   border: 1px solid #6d9df2;
   border-radius: 12%;
   padding: 3%;
   width: 8.3vh;
   text-align: center;
-  margin: 2vh auto auto 3vh;
+  margin: 0.4vh auto auto 3vh;
   background-color: #DAE9F9;
   filter: drop-shadow(0 1px 1px gray);
-
 }
 
 .bus-number h1 {
   font-size: 2.4vh;
-  font-weight: 800;
-  color: black;
-  letter-spacing: 0.1vh;
-}
-
-.bus-line h2 {
-  font-size: 2.5vh;
   font-weight: 600;
   color: black;
-  position: absolute;
-  margin: 2.2vh auto 1.5vh 15.5vh;
   letter-spacing: 0.1vh;
 }
 
+/*Bus Line Names*/
+.bus-line h2 {
+  font-size: 2.5vh;
+  font-weight: 700;
+  color: black;
+  margin: 2.2vh auto 1.5vh 15.5vh;
+  letter-spacing: 0.1vh;
+  width: 36%;
+}
+
+/*Bus Directions and Status*/
 .bus-line h3 {
   font-size: 1.6vh;
   font-weight: 300;
   color: white;
-  position: absolute;
-  margin: 5.5vh auto 1.5vh 15.5vh;
+  text-align: left;
+  width: 13vh;
+  margin: auto auto auto 15.5vh;
   letter-spacing: 0.1vh;
   padding: 0.4vh;
   border-radius: 5%;
@@ -240,11 +232,13 @@ body {
   background: linear-gradient(90deg, rgba(50,0,0,1) 0%, rgba(144,4,4,1) 35%, rgba(251,93,93,1) 100%);
 }
 
+/* arrival time */
 .bus-time h4 {
-  position: absolute;
-  margin: 2.1vh auto 1vh 36.5vh;
+  width: 30%;
+  margin: 0 auto auto 36.5vh;
   font-size: 2.8vh;
   letter-spacing: 0.2vh;
+  vertical-align: top;
 }
 
 span {
@@ -252,18 +246,18 @@ span {
 }
 
 #resumes {
-  position: absolute;
+  width: 20%;
   margin: 2vh auto 1vh 36.5vh;
 }
 
+/* frequency */
 .bus-time h5 {
-  position: absolute;
-  margin: 6vh auto 1vh 36.5vh;
+  float: right;
+  margin: auto 5vh 1vh 36.5vh;
   font-size: 1.5vh;
 }
 
 .bus-time img {
-  position: absolute;
   float: right;
-  margin: 4vh auto 1vh 50.5vh;
+  margin: auto 2.5vh 1vh 50.5vh;
 }
