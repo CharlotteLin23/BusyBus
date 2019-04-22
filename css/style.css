@@ -24,7 +24,7 @@ body {
 
 main {
   width: 375px;
-  height: 97vh;
+  height: 667px;
   display: block;
   background-color: white;
   max-width: 100%;
@@ -157,7 +157,7 @@ li {
 .bus-container {
   overflow: scroll;
   overflow-x: hidden !important;
-  height: 52%;
+  height: 51%;
   position: relative;
   display: block;
 }
