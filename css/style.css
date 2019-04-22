@@ -179,10 +179,10 @@ li {
 }
 
 .bus-line {
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   width: 100%;
-  min-height: 10vh;
+  min-height: 71px;
   display: inline-block;
   background-color: #fbf9ff;
   border-bottom: 1px solid darkGray;
