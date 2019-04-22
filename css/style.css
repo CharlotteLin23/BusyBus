@@ -157,14 +157,14 @@ li {
 .bus-container {
   overflow: scroll;
   overflow-x: hidden !important;
-  height: 50.5%;
+  height: 52%;
   position: relative;
   display: block;
 }
 
 .route-type {
   width: 100%;
-  min-height: 5.5vh;
+  height: 39px;
   position: relative;
   background-color: black;
 }
@@ -174,7 +174,7 @@ li {
   font-weight: 300;
   color: white;
   display: inline-block;
-  margin: 1.5vh;
+  margin: 10.5px;
   letter-spacing: 0.1vh;
 }
 
@@ -203,7 +203,8 @@ li {
   padding: 3%;
   width: 15%;
   text-align: center;
-  margin: 0.5vh auto auto 3vh;
+  margin: 3.5px auto auto 17px;
+  /*margin: 0.5vh auto auto 3vh;*/
   background-color: #DAE9F9;
   filter: drop-shadow(0 1px 1px gray);
 
