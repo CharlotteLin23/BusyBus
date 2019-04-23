@@ -41,7 +41,7 @@ main {
 }
 
 .nav-bar {
-  width: 100%;
+  width: 375px;
   height: 45px;
   position: relative;
   background-color: white;
@@ -54,20 +54,20 @@ main {
 
 .nav-bar img {
   position: absolute;
-  margin: 16.5px;
+  margin: 16.5px auto auto 17px;
 }
 
 .nav-bar h1 {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 600;
   color: black;
-  margin: 14px auto 8px 25px;
+  margin: 14px auto 8px 21px;
   letter-spacing: 0.2vh;
   display: inline-block;
 }
 
 .nav-bar h2 {
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin: 12px auto 10px 30px;
   padding-left: 0.8vh;
   display: inline-block;
@@ -180,7 +180,7 @@ li {
 
 .bus-line {
   padding-top: 11px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   width: 100%;
   min-height: 71px;
   display: inline-block;
@@ -212,16 +212,17 @@ li {
 
 .bus-number h1 {
   font-size: 1.1em;
-  font-weight: 800;
+  font-weight: 700;
   color: black;
   letter-spacing: 0.1vh;
 }
 
+/*Bus Line names and directions*/
 .bus-name {
   width: 41%;
   line-height: 20px;
+  margin-top: 2px;
 }
-/*Bus Line names and directions*/
 
 .bus-line ul li h2, h3 {
   display: inline;
@@ -260,7 +261,7 @@ li {
 
 /*Bus Times and Frequency*/
 .bus-time {
-  width: 25%;
+  width: 27%;
 }
 
 .bus-time h4 {
